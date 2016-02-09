@@ -30,22 +30,22 @@ For n options of p<sub>n</sub> perceptrons
 
 |Name|TT/TF/FT/FF|Weights|Trehsold|Error|
 |---|---|---|---|---|
-|Never|0000|   |   |   |
-|Neither|0001|   |   |   |
-|B w/o A|0010|   |   |   |
-|Not A|0011|   |   |   |
-|A w/o B|0100|   |   |   |
-|Not B|0101|   |   |   |
-|A xor B|0110|   |   |0000|
-|Not both|0111|   |   |   |
-|Both|1000|   |   |   |
-|A iff B|1001|   |   |0000|
-|B|1010|   |   |   |
-|B if A|1011|   |   |   |
-|A|   |1100|   |   |
-|A if B|1101|   |   |   |
-|A or B|1110|   |   |   |
-|Always|1111|   |   |   |
+|Never|0000|0 0|2|   |
+|Neither|0001|1 1|1|   |
+|B w/o A|0010|1 -1|1|   |
+|Not A|0011|2 0|0|   |
+|A w/o B|0100|-1 1|1|   |
+|Not B|0101|0 2|0|   |
+|A xor B|0110|0 0|0|0000|
+|Not both|0111|1 1|-1|   |
+|Both|1000|-1 -1|1|   |
+|A iff B|1001|0 0|0|0000|
+|B|1010|0 -2|0|   |
+|B if A|1011|1 -1|-1|   |
+|A|   |1100|-2 0|0|
+|A if B|1101|-1 1|-1|   |
+|A or B|1110|-1 -1|-1|   |
+|Always|1111|0 0|-2|   |
 2. The operations A IFF B and A XOR B cannot be done by a single perceptron.
 A network of two perceptrons in Layer 1 could output to a third perceptron 
 in Layer 2. Layer 1 would have a first neuron that fires for A OR B and a 
