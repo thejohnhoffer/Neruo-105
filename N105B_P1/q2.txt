@@ -1,0 +1,9 @@
+Question 2:
+The operations A IFF B and A XOR B cannot be done by a single perceptron.
+A network of two perceptrons in Layer 1 could output to a third perceptron 
+in Layer 2. Layer 1 would have a first neuron that fires for A OR B and a 
+second neuron that fires for BOTH A AND B. The perceptron in Layer 2 would 
+fire for 'first' WITHOUT 'second'. A definition for XOR is then created by
+the two layers as A XOR B := (A OR B) WITHOUT (BOTH A AND B).
+
+Also, three perceptrons could set A IFF B := (A NOR B) OR (BOTH A AND B).
