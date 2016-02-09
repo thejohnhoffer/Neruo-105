@@ -28,7 +28,7 @@ For n options of p<sub>n</sub> perceptrons
 ### Learning with perceptrons (second - fifth options)
 1. All binary truth functions were solved except A-xor-B and A-iff-B 
 
-|Name|TT/TF/FT/FF|Weights|Trehsold|Error|
+|Name|TT/TF/FT/FF|Weights|Trehsold|Actual|
 |---|---|---|---|---|
 |Never|0000|0 0|2||
 |Neither|0001|1 1|1||
