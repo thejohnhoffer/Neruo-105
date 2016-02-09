@@ -42,7 +42,7 @@ classdef percy
         end
         % Integrate and fire one trial
         function o = fire(o,t)
-            o.vals(t) = 2*(dot(o.ws(o.pixi),o.trials(t,o.pixi)) > o.th)-1;
+            o.vals(t) = 2*(dot(o.ws(o.pixi),o.trials(t,o.pixi)) >= o.th)-1;
         end
         % Evaluate all trials
         function o = see(o,range)
