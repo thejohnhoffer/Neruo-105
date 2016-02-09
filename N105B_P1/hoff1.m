@@ -38,8 +38,8 @@ function hoffer = hoff1(v)
     %% Learning with Perceptrons
     % Two binary inputs, four outputs
     tmp = 2; load('xb.mat'); load('yb.mat');
-    X = 2*double(dec2bin(0:2^tmp-1)-'0')-1;
-    y = 2*double(dec2bin(0:2^tmp^tmp-1)-'0')-1;
+    X = 1-2*double(dec2bin(0:2^tmp-1)-'0');
+    y = 1-2*double(dec2bin(0:2^tmp^tmp-1)-'0');
     xb = strjoin(xb); yb = strjoin(yb);
     opt(end+1) = option({'X','y'},{X,y},{'yi'},{'All operators'});
     opt(end) = opt(end).addp({'plot','xt','yt'},{'plotall',xb,yb});
