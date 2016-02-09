@@ -46,6 +46,7 @@ For n options of p<sub>n</sub> perceptrons
 |A if B|1101|1 -1|-1||
 |A or B|1110|1 1|-1||
 |Always|1111|0 0|-2||
+
 2. The operations A IFF B and A XOR B cannot be done by a single perceptron.
 A network of two perceptrons in Layer 1 could output to a third perceptron 
 in Layer 2. Layer 1 would have a first neuron that fires for A OR B and a 
